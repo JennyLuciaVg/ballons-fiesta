@@ -871,7 +871,7 @@ a.box:active {
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 35px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -1484,7 +1484,7 @@ a.box:active {
   .button.is-medium {
     font-size: 1.25rem; }
   .button.is-large {
-    font-size: 1.5rem; }
+    font-size: 0.75rem; }
   .button[disabled] {
     background-color: white;
     border-color: #dbdbdb;
@@ -1684,7 +1684,7 @@ a.box:active {
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 35px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -1848,7 +1848,7 @@ a.box:active {
     -webkit-appearance: none;
     align-items: center;
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 35px;
     box-shadow: none;
     display: inline-flex;
     font-size: 1rem;
@@ -2155,14 +2155,14 @@ a.box:active {
   .file.is-boxed.is-large .file-icon .fa {
     font-size: 35px; }
   .file.is-boxed.has-name .file-cta {
-    border-radius: 3px 3px 0 0; }
+    border-radius: 35px 35px 0 0; }
   .file.is-boxed.has-name .file-name {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 35px 35px;
     border-width: 0 1px 1px; }
   .file.is-right .file-cta {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 35px 35px 0; }
   .file.is-right .file-name {
-    border-radius: 3px 0 0 3px;
+    border-radius: 35px 0 0 35px;
     border-width: 1px 0 1px 1px;
     order: -1; }
   .file.is-fullwidth .file-label {
@@ -2203,7 +2203,7 @@ a.box:active {
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 35px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -2217,7 +2217,7 @@ a.box:active {
   position: relative;
   vertical-align: top;
   border-color: #dbdbdb;
-  border-radius: 3px;
+  border-radius: 35px;
   font-size: 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -2304,13 +2304,13 @@ a.box:active {
   .field.has-addons .control:first-child .button,
   .field.has-addons .control:first-child .input,
   .field.has-addons .control:first-child .select select {
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px; }
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px; }
   .field.has-addons .control:last-child .button,
   .field.has-addons .control:last-child .input,
   .field.has-addons .control:last-child .select select {
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px; }
   .field.has-addons .control .button,
   .field.has-addons .control .input,
   .field.has-addons .control .select select {
@@ -2579,7 +2579,7 @@ a.box:active {
 
 .notification {
   background-color: whitesmoke;
-  border-radius: 3px;
+  border-radius: 35px;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative; }
   .notification:not(:last-child) {
@@ -2817,7 +2817,7 @@ a.box:active {
 .tag {
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 3px;
+  border-radius: 35px;
   color: #4a4a4a;
   display: inline-flex;
   font-size: 0.75rem;
@@ -3211,7 +3211,7 @@ a.tag:hover {
 
 .dropdown-content {
   background-color: white;
-  border-radius: 3px;
+  border-radius: 35px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   padding-bottom: 0.5rem;
   padding-top: 0.5rem; }
@@ -3247,7 +3247,7 @@ a.dropdown-item {
   .level:not(:last-child) {
     margin-bottom: 1.5rem; }
   .level code {
-    border-radius: 3px; }
+    border-radius: 35px; }
   .level img {
     display: inline-block;
     vertical-align: top; }
@@ -3393,7 +3393,7 @@ a.dropdown-item {
 
 .message {
   background-color: whitesmoke;
-  border-radius: 3px;
+  border-radius: 35px;
   font-size: 1rem; }
   .message:not(:last-child) {
     margin-bottom: 1.5rem; }
@@ -3479,7 +3479,7 @@ a.dropdown-item {
 .message-header {
   align-items: center;
   background-color: #4a4a4a;
-  border-radius: 3px 3px 0 0;
+  border-radius: 35px 35px 0 0;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -3502,7 +3502,7 @@ a.dropdown-item {
 
 .message-body {
   border: 1px solid #dbdbdb;
-  border-radius: 3px;
+  border-radius: 35px;
   color: #4a4a4a;
   padding: 1em 1.25em; }
   .message-body a:not(.button),
@@ -4092,7 +4092,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 35px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -4237,7 +4237,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
 
 .panel-heading {
   background-color: whitesmoke;
-  border-radius: 3px 3px 0 0;
+  border-radius: 35px 35px 0 0;
   color: #363636;
   font-size: 1.25em;
   font-weight: 300;
@@ -4367,7 +4367,7 @@ label.panel-block {
     justify-content: flex-end; }
   .tabs.is-boxed a {
     border: 1px solid transparent;
-    border-radius: 3px 3px 0 0; }
+    border-radius: 35px 35px 0 0; }
     .tabs.is-boxed a:hover {
       background-color: whitesmoke;
       border-bottom-color: #dbdbdb; }
@@ -4391,9 +4391,9 @@ label.panel-block {
   .tabs.is-toggle li + li {
     margin-left: -1px; }
   .tabs.is-toggle li:first-child a {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 35px 0 0 35px; }
   .tabs.is-toggle li:last-child a {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 35px 35px 0; }
   .tabs.is-toggle li.is-active a {
     background-color: #00d1b2;
     border-color: #00d1b2;

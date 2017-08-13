@@ -1,1 +1,65 @@
 @import "../../node_modules/bulma/bulma"
+
+.button
+  padding-left: 2.8em
+  padding-right: 2.8em
+  padding-top: 1.3em
+  padding-bottom: 1.3em
+
+.relative
+  position: relative
+
+.absolute
+  position: absolute
+
+.separator
+  border-top: 0.1rem solid $danger
+  width: 7.75rem
+  height: 0.0625rem
+  margin: 0.5rem auto
+
+#testimonios
+  .columns
+    padding-top: 1.5rem
+    .box-testimonios
+      padding: 1rem
+      //padding-top: 100%
+      .separator-box
+        border-top: 0.1rem solid white
+        width: 7.5rem
+        height: 0.0625rem
+        margin: 0.5rem auto
+      img
+        border-radius: 50%
+
+#eventos
+  .columns
+    padding-top: 1.5rem
+  .column
+    .image
+      background-position: center
+      background-size: cover
+    .is-overlay
+      display: none
+      margin: 0.75rem
+      background-color: rgba(153, 0, 255, 0.7)
+    &:hover
+      .is-overlay
+        display: flex
+        align-items: center
+        flex-grow: 1
+        flex-shrink: 0
+        div
+          width: 100%
+
+footer
+  p
+    padding: 0.5rem 0
+    font-size: $size-6
+  .reservados
+    font-size: $size-7
+  .info
+    display: flex
+    align-items: center
+    flex-grow: 1
+    flex-shrink: 0

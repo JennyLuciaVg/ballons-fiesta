@@ -1,73 +1,133 @@
 extends layout
 
 block content
-  section.hero.is-primary.is-fullheight(style="background-image: url(./images/slider.png); background-size: cover;")
+  section.hero.is-fullheight(style="background-image: url(./images/slider.png); background-size: cover;")
     div.hero-head
       header.nav.is-shadowless
         div.container
           div.nav-left
-            a.nav-item 
-              //img.image(src="")
+            a.nav-item
+              img(src="/images/logo2.png")
           div.nav-right.nav-menu
-            a.nav-item.is-active.is-bold INICIO
+            a.nav-item.is-active.is-primary INICIO
             a.nav-item NOSOTROS
             a.nav-item FOTOS
             span.nav-item
-              a.button.is-white
+              a.button.is-primary.is-inverted
                 span COTIZA
     div.hero-body
       div.container
         div.columns
           div.column.is-half
-          div.column.has-text-left
-            h1.title.is-1 VIVE UNA GRAN FIESTA LLENA DE FELICIDAD
-            a.button.is-danger.is-large 
+          div.column.has-text-left.is-white
+            h1.title.is-1.is-white VIVE UNA GRAN FIESTA LLENA DE FELICIDAD
+            a.button.is-danger 
               span.is-small DIVERTETE
   section.hero.is-fullheight
     div.hero-body
       div.container
         div.columns
+          div.column.has-text-centered
+            img(src="/images/logo.png")
           div.column
-          div.column
-            h1.title.is-1.is-spaced BALLOONS FIESTA
+            h1.title.is-1.is-spaced.is-danger BALLOONS FIESTA
             p.subtitle.is-6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit. 
             a.button.is-primary CONOCE MÁS
-  section.hero.is-medium
-    div.hero-body
-      div.container
-        div.columns
-          div.column.has-text-right
-            h1.title.is-4 HACEMOS ARTE </br>CARITAS PINTADAS
+  section.is-fullhd
+    div.columns.is-gapless
+      div.column.has-text-right(style="background-image: url(./images/niña.png); background-size: cover;")
+        div.hero.is-medium
+          div.hero-body  
+            h1.title.is-3.is-white HACEMOS ARTE </br>CARITAS PINTADAS
             a.button.is-primary VER MÁS
-          div.column.has-text-left
-            h1.title.is-4 DECORAMOS ESPACIOS </br>PARA MOMENTOS ESPECIALES
+      div.column.has-text-left(style="background-image: url(./images/deco.png); background-size: cover;")
+        div.hero.is-medium
+          div.hero-body  
+            h1.title.is-3.is-white DECORAMOS ESPACIOS </br>PARA MOMENTOS ESPECIALES
             a.button.is-danger VER MÁS
-  section.section.has-text-centered
+      
+
+  section.section.has-text-centered.is-medium#eventos
     div.container
-      h1.title.has-text-centered Últimos eventos
+      
+      h1.title.title-1.has-text-centered Últimos eventos
+        div.separator
       div.columns.has-text-centered
-        div.column One
-        div.column Two
-        div.column Three
-      a.button.is-info VER MÁS
-  section.section.has-text-centered
+        div.column.relative
+          figure.image.is-square(style="background-image: url(./images/Rectangle-6.png);")
+          div.is-overlay
+              div.has-text-centered
+                h2.title.is-white FIESTA EN </br>GINEBRA
+                p.subtitle.has-text-white Lugar: Suiza
+        div.column.relative
+          figure.image.is-square(style="background-image: url(./images/Rectangle-7.png);")
+          div.is-overlay
+              div.has-text-centered
+                h2.title.is-white FIESTA EN </br>GINEBRA
+                p.subtitle.has-text-white Lugar: Suiza
+        div.column.relative
+          figure.image.is-square(style="background-image: url(./images/Rectangle-8.png);")
+          div.is-overlay
+              div.has-text-centered
+                h2.title.is-white FIESTA EN </br>GINEBRA
+                p.subtitle.has-text-white Lugar: Suiza
+      div.columns.has-text-centered
+        div.column.relative
+          figure.image.is-square(style="background-image: url(./images/Rectangle-9.png);")
+          div.is-overlay
+              div.has-text-centered
+                h2.title.is-white FIESTA EN </br>GINEBRA
+                p.subtitle.has-text-white Lugar: Suiza
+        div.column.relative
+          figure.image.is-square(style="background-image: url(./images/Rectangle-10.png);")
+          div.is-overlay
+              div.has-text-centered
+                h2.title.is-white FIESTA EN </br>GINEBRA
+                p.subtitle.has-text-white Lugar: Suiza
+        div.column.relative
+          figure.image.is-square(style="background-image: url(./images/Rectangle-11.png);")
+          div.is-overlay
+              div.has-text-centered
+                h2.title.is-white FIESTA EN </br>GINEBRA
+                p.subtitle.has-text-white Lugar: Suiza
+      a.button.is-purple VER MÁS
+      
+  section.section.has-text-centered#testimonios
     div.container
       h1.title Testimonios
+        div.separator
       div.columns
-        div.column.is-danger 
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna.
+        div.column
+          div.box-testimonios.has-background-danger.has-text-white.has-text-centered
+            img(src="/images/Rectangle.png")
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna.
+            div.separator-box
         div.column Two
         div.column Three
-      a.button.is-info VER MÁS
-  footer.footer.is-info
-    div.container
-      div.content
-        div.columns
-          div.column
-          div.column
-            p 232-5656
-            p team@ballonsfiesta.com
-            p Av. Felicidad 1327, San Miguel
+  footer.has-background-purple.has-text-centered
+    div.columns.is-gapless
+      div.column.has-text-right
+        div.hero
+          div.hero-body
+            img(src="/images/logo.png")(style="border-right: 2px solid white;")
+      div.column.has-text-white.has-text-left.info
+        div.hero
+          div.hero-body
+            p 
+              span.icon
+                i.fa.fa-phone
+              span  232-5656
+            p 
+              span.icon
+                i.fa.fa-envelope
+              span  team@ballonsfiesta.com
+            p 
+              span.icon
+                i.fa.fa-map-marker
+              span  Av. Felicidad 1327, San Miguel
+    p.has-text-white.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>
+      
+      
             
         
             

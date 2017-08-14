@@ -6511,6 +6511,18 @@ label.panel-block {
   padding-top: 1.3em;
   padding-bottom: 1.3em; }
 
+.button.is-cyan {
+  background-color: #00CBFF !important;
+  border-color: transparent;
+  box-shadow: none;
+  color: #fff; }
+
+.has-background-cyan {
+  background-color: #00CBFF !important; }
+
+.title-purple {
+  color: #9203FF; }
+
 .relative {
   position: relative; }
 
@@ -6534,6 +6546,8 @@ label.panel-block {
       margin: 0.5rem auto; }
     #testimonios .columns .box-testimonios img {
       border-radius: 50%; }
+    #testimonios .columns .box-testimonios .subtitle {
+      color: #fff; }
 
 #eventos .columns {
   padding-top: 1.5rem; }
@@ -6567,3 +6581,11 @@ footer .info {
   align-items: center;
   flex-grow: 1;
   flex-shrink: 0; }
+
+footer .footer-img {
+  border-right: 2px solid white; }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer-img {
+    border-right: none !important;
+    text-align: center; } }

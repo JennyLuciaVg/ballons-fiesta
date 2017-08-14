@@ -5,7 +5,16 @@
   padding-right: 2.8em
   padding-top: 1.3em
   padding-bottom: 1.3em
+.button.is-cyan
+  background-color: #00CBFF !important
+  border-color: transparent
+  box-shadow: none
+  color: #fff
+.has-background-cyan
+  background-color: #00CBFF !important
 
+.title-purple
+  color: #9203FF
 .relative
   position: relative
 
@@ -31,6 +40,8 @@
         margin: 0.5rem auto
       img
         border-radius: 50%
+      .subtitle
+        color:#fff
 
 #eventos
   .columns
@@ -63,3 +74,12 @@ footer
     align-items: center
     flex-grow: 1
     flex-shrink: 0
+  .footer-img
+    border-right: 2px solid white
+
+//Media Queries
+@media (min-width: 320px) and (max-width: 768px)
+  .footer-img
+    border-right: none !important
+    text-align: center
+

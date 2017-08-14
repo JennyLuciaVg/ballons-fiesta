@@ -20,4 +20,10 @@ router.get('/nosotros', function(req, res){
   });
 });
 
+router.get('/servicios', function(req, res){
+  res.render('servicios', {
+    title: 'Servicios'
+  });
+});
+
 module.exports = router;

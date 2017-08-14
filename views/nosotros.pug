@@ -1,0 +1,98 @@
+extends layout
+
+block content
+  section.hero.is-fullheight(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+    div.hero-head
+      header.nav.is-shadowless
+        div.container
+          div.nav-left
+            a.nav-item
+              img(src="/images/logo2.png")
+          div.nav-right.nav-menu
+            a.nav-item INICIO
+            a.nav-item.is-active.is-primary NOSOTROS
+            a.nav-item FOTOS
+            span.nav-item
+              a.button.is-primary.is-inverted
+                span COTIZA
+    div.hero-body
+      div.container
+        div.columns
+          div.column.has-text-centered.is-white
+            h1.title.is-1.is-white CONOCE COMO NACIO </br> LA MAGIA
+  section.hero.is-fullheight
+    div.hero-body
+      div.container
+        div.columns
+          div.column.has-text-centered
+            img(src="/images/logo.png")
+        div.columns
+          div.column
+            p.subtitle.is-6.title-purple.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit. </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.  
+            
+  section.is-fullhd
+    div.columns.is-gapless
+      div.has-background-danger
+      div.column(style="background-image: url(./images/mision.png); background-size: cover;")
+        div.hero
+          div.columns.hero-body
+            div.column.has-text-centered  
+              h1.title.is-3.is-white MISION
+            div.column 
+              p.has-text-white.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante.
+
+  section.is-fullhd
+    div.columns.is-gapless
+      div.has-background-danger
+      div.column(style="background-image: url(./images/vision.png); background-size: cover;")
+        div.hero
+          div.columns.hero-body
+            div.column.has-text-centered  
+              h1.title.is-3.is-white VISION
+
+      
+
+  section.section.has-text-centered.is-medium#equipo
+    div.container
+      h1.title.title-1.has-text-centered Nuestro Equipo
+        div.separator
+      div.columns.has-text-centered
+        div.column.relative
+          figure.image.is-square.image-rounded(style="background-image: url(./images/nosotros1.png);")
+          div.is-overlay.image-rounded
+              div.has-text-centered
+                p.subtitle.is-white ROSITA ALCANTARA
+        div.column.relative
+          figure.image.is-square.image-rounded(style="background-image: url(./images/nosotros2.png);")
+          div.is-overlay.image-rounded
+              div.has-text-centered
+                p.subtitle.is-white ROSITA ALCANTARA
+        div.column.relative
+          figure.image.is-square.image-rounded(style="background-image: url(./images/nosotros3.png);")
+          div.is-overlay.image-rounded
+              div.has-text-centered
+                p.subtitle.is-white ROSITA ALCANTARA
+      
+  footer.has-text-centered
+    div.columns.is-gapless.footer-box-shadow
+      div.column.has-text-right
+        div.hero
+          div.hero-body
+            div.footer-img-nosotros
+              img(src="/images/logo.png")
+      div.column.has-text-green.has-text-left.info
+        div.hero
+          div.hero-body
+            p 
+              span.icon
+                i.fa.fa-phone
+              span  (01) 232-5656
+            p 
+              span.icon
+                i.fa.fa-envelope
+              span  team@ballonsfiesta.com
+            p 
+              span.icon
+                i.fa.fa-map-marker
+              span  Av. Felicidad 1327, San Miguel
+    p.has-text-green.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>

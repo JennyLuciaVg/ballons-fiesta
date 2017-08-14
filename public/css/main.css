@@ -6569,6 +6569,33 @@ label.panel-block {
   #eventos .column:hover .is-overlay div {
     width: 100%; }
 
+#equipo .image-rounded {
+  border-radius: 50px; }
+
+#equipo .columns {
+  padding-top: 1.5rem; }
+
+#equipo .column .image {
+  background-position: center;
+  background-size: cover; }
+
+#equipo .column .is-overlay {
+  display: none;
+  margin: 0.75rem;
+  background-color: #00d1b2; }
+
+#equipo .column:hover .is-overlay {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  opacity: 0.7; }
+  #equipo .column:hover .is-overlay div {
+    width: 100%; }
+
+#equipo .column .subtitle.is-white {
+  color: #fff; }
+
 footer p {
   padding: 0.5rem 0;
   font-size: 1rem; }
@@ -6584,6 +6611,16 @@ footer .info {
 
 footer .footer-img {
   border-right: 2px solid white; }
+
+footer .footer-img-nosotros {
+  border-right: 2px solid #E33A5C; }
+
+footer .has-text-green {
+  color: #00d1b2; }
+
+footer .footer-box-shadow {
+  border-top: 6px solid #ddd;
+  box-shadow: inset 1px 4px 4px 0px rgba(221, 221, 221, 0.65); }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .footer-img {

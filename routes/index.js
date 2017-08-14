@@ -14,4 +14,10 @@ router.get('/cotizar', function(req, res){
   });
 });
 
+router.get('/nosotros', function(req, res){
+  res.render('nosotros', {
+    title: 'Nosotros'
+  });
+});
+
 module.exports = router;

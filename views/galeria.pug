@@ -1,0 +1,112 @@
+extends layout
+
+block content
+  section.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+    div.hero-head
+      header.nav.is-shadowless
+        div.container
+          div.nav-left
+            a.nav-item
+              img(src="/images/logo2.png")
+          div.nav-right.nav-menu
+            a.nav-item(href="/") INICIO
+            a.nav-item(href="nosotros") NOSOTROS
+            a.nav-item(href="servicios") SERVICIOS 
+            a.nav-item.is-active.is-primary(href="galeria") FOTOS
+            span.nav-item
+              a.button.is-primary.is-inverted
+                span COTIZA
+    div.hero-body
+      div.container
+        div.columns
+          div.column.has-text-centered.is-white
+            h1.title.is-1.is-white CAPTURAMOS CADA MOMENTO
+
+  section.is-fullhd
+    div.columns.is-gapless
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-1.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-2.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-3.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-4.png")
+  section.is-fullhd
+    div.columns.is-gapless
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-5.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-6.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-7.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-8.png")
+  section.is-fullhd
+    div.columns.is-gapless
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-9.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-10.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-11.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-12.png")
+  section.is-fullhd
+    div.columns.is-gapless
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-13.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-14.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-15.png")
+      div.column.relative
+        figure.image
+          img(src="/images/galeria/galeria-16.png")
+  section.hero.is-small
+    div.hero-body
+      div.container
+        div.columns
+          div.column
+            div.field.is-grouped.is-grouped-centered
+              p.control 
+                a.button.is-danger VER MÁS
+
+  footer.has-text-centered
+    div.columns.is-gapless.footer-box-shadow
+      div.column.has-text-right
+        div.hero
+          div.hero-body
+            div.footer-img
+              img(src="/images/logo.png")
+      div.column.has-text-green.has-text-left.info
+        div.hero
+          div.hero-body
+            p 
+              span.icon
+                i.fa.fa-phone
+              span  (01) 232-5656
+            p 
+              span.icon
+                i.fa.fa-envelope
+              span  team@ballonsfiesta.com
+            p 
+              span.icon
+                i.fa.fa-map-marker
+              span  Av. Felicidad 1327, San Miguel
+    p.has-text-green.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>

@@ -26,4 +26,10 @@ router.get('/servicios', function(req, res){
   });
 });
 
+router.get('/galeria', function(req, res){
+  res.render('galeria', {
+    title: 'galeria'
+  });
+});
+
 module.exports = router;

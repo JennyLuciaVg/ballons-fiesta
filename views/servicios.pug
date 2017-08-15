@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  section.hero.is-fullheight(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+  section.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
     div.hero-head
       header.nav.is-shadowless
         div.container
@@ -21,71 +21,67 @@ block content
         div.columns
           div.column.has-text-centered.is-white
             h1.title.is-1.is-white AMAMOS NUESTROS SERVICIOS
-  section.hero.is-fullheight
+  section.hero.is-medium
     div.hero-body
       div.container
         div.columns
           div.column
             p.subtitle.is-6.title-purple.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit. </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.  
             
+  section.hero.is-medium(style="background-image: url(./images/servicios/niña.png); background-size: cover; background-repeat: no-repeat")
+    div.hero-body
+      div.container.has-text-centered
+        h1.title.is-2.is-white CARITAS </br>PINTADAS
   section.is-fullhd
     div.columns.is-gapless
-      div.has-background-danger
-      div.column(style="background-image: url(./images/niña.png); background-size: cover;")
-        div.hero
-          div.columns.hero-body
-            div.column.has-text-centered  
-              
-            div.column 
-              h1.title.is-3.is-white CARITAS </br> PINTADAS
-        
-  section.is-fullhd
-    div.columns.is-gapless
-      div.has-background-danger
-      div.column(style="background-image: url(./images/carita-pintada-1.png); background-size: cover;")
-        div.hero
-          div.columns.hero-body
-            div.column.has-text-centered
-      div.column(style="background-image: url(./images/carita-pintada-2.png); background-size: cover;")
-        div.hero
-          div.columns.hero-body
-            div.column.has-text-centered
-      div.column(style="background-image: url(./images/carita-pintada-3.png); background-size: cover;")
-        div.hero
-          div.columns.hero-body
-            div.column.has-text-centered
+      div.column.relative
+        figure.image
+          img(src="/images/servicios/carita-pintada-3.png")
+      div.column.relative
+        figure.image
+          img(src="/images/servicios/carita-pintada-2.png")
+      div.column.relative
+        figure.image
+          img(src="/images/servicios/carita-pintada-1.png")
+  section.hero.is-medium
+    div.hero-body
+      div.container
+        div.columns
+          div.column
+            p.subtitle.is-6.title-purple.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.
+            div.field.is-grouped.is-grouped-centered
+              p.control 
+                a.button.is-danger VER MÁS
+              p.control
+                a.button.is-primary COTIZAR
 
-    section.hero.is-fullheight
+  section.hero.is-medium(style="background-image: url(./images/servicios/deco.png); background-size: cover; background-repeat: no-repeat")
+    div.hero-body
+      div.container.has-text-centered
+        h1.title.is-2.is-white CARITAS </br>PINTADAS
+  section.is-fullhd
+    div.columns.is-gapless
+      div.column.relative
+        figure.image
+          img(src="/images/servicios/Rectangle-2.png")
+      div.column.relative
+        figure.image
+          img(src="/images/servicios/Rectangle-1.png")
+      div.column.relative
+        figure.image
+          img(src="/images/servicios/Rectangle.png")
+    section.hero.is-medium
       div.hero-body
         div.container
           div.columns
             div.column
               p.subtitle.is-6.title-purple.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.
-              div.column
-                div.colum.has-text-centered
+              div.field.is-grouped.is-grouped-centered
+                p.control 
                   a.button.is-danger VER MÁS
+                p.control
                   a.button.is-primary COTIZAR
 
-  section.section.has-text-centered.is-medium#equipo
-    div.container
-      h1.title.title-1.has-text-centered Nuestro Equipo
-        div.separator
-      div.columns.has-text-centered
-        div.column.relative
-          figure.image.is-square.image-rounded(style="background-image: url(./images/nosotros1.png);")
-          div.is-overlay.image-rounded
-              div.has-text-centered
-                p.subtitle.is-white ROSITA ALCANTARA
-        div.column.relative
-          figure.image.is-square.image-rounded(style="background-image: url(./images/nosotros2.png);")
-          div.is-overlay.image-rounded
-              div.has-text-centered
-                p.subtitle.is-white ROSITA ALCANTARA
-        div.column.relative
-          figure.image.is-square.image-rounded(style="background-image: url(./images/nosotros3.png);")
-          div.is-overlay.image-rounded
-              div.has-text-centered
-                p.subtitle.is-white ROSITA ALCANTARA
       
   footer.has-text-centered
     div.columns.is-gapless.footer-box-shadow

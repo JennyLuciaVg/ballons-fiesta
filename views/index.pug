@@ -46,11 +46,8 @@ block content
           div.hero-body  
             h1.title.is-3.is-white DECORAMOS ESPACIOS </br>PARA MOMENTOS ESPECIALES
             a.button.is-danger VER MÁS
-      
-
   section.section.has-text-centered.is-medium#eventos
     div.container
-      
       h1.title.title-1.has-text-centered Últimos eventos
         div.separator
       div.columns.has-text-centered
@@ -92,7 +89,6 @@ block content
                 h2.title.is-white FIESTA EN </br>GINEBRA
                 p.subtitle.has-text-white Lugar: Suiza
       a.button.is-primary VER MÁS
-      
   section.section.has-text-centered#testimonios
     div.container
       h1.title Testimonios
@@ -141,14 +137,24 @@ block content
             div.separator-box
             p.title.is-6 MARTIN ESPINOZA
             p.subtitle.is-7 Ginebra, Suiza
-  footer.has-background-purple.has-text-centered
-    div.columns.is-gapless
+  section.hero#suscribete(style="background-image: url(./images/suscribe.png)")
+    div.hero-body
+      div.container.has-text-centered
+        h1.title.has-text-white SUSCRIBETE
+        h2.subtitle.has-text-white.is-6 Suscribete a nuestro boletín de novedades
+        div.field.has-addons.has-addons-centered
+          div.control
+            input.input(placeholder="Correo Electronico")
+          div.control
+            a.button.is-primary SUSCRIBIRSE
+  footer.has-text-centered
+    div.columns.is-gapless.footer-box-shadow
       div.column.has-text-right
         div.hero
           div.hero-body
             div.footer-img
               img(src="/images/logo.png")
-      div.column.has-text-white.has-text-left.info
+      div.column.has-text-green.has-text-left.info
         div.hero
           div.hero-body
             p 
@@ -163,7 +169,7 @@ block content
               span.icon
                 i.fa.fa-map-marker
               span  Av. Felicidad 1327, San Miguel
-    p.has-text-white.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>
+    p.has-text-green.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>
       
       
             

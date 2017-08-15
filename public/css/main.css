@@ -3333,6 +3333,15 @@ a.box:active {
   .image.is-128x128 {
     height: 128px;
     width: 128px; }
+  .image.is-256x256 {
+    height: 256px;
+    width: 256px; }
+  .image.is-400x400 {
+    height: 400px;
+    width: 400px; }
+  .image.is-512x512 {
+    height: 512px;
+    width: 512px; }
 
 .notification {
   background-color: whitesmoke;
@@ -6529,6 +6538,9 @@ label.panel-block {
 .absolute {
   position: absolute; }
 
+.margin-auto {
+  margin: 0 auto; }
+
 .separator {
   border-top: 0.1rem solid #ff3860;
   width: 7.75rem;
@@ -6596,6 +6608,29 @@ label.panel-block {
 #equipo .column .subtitle.is-white {
   color: #fff; }
 
+#suscribete .title,
+#suscribete .subtitle {
+  padding-bottom: 1rem; }
+
+#suscribete .input {
+  height: 2.7em; }
+
+#mision .is-overlay {
+  background-color: rgba(227, 58, 92, 0.5); }
+
+#vision .hero-body {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  max-width: 100%; }
+  #vision .hero-body .container {
+    width: 100%;
+    max-width: 100%; }
+  #vision .hero-body .has-background-vision {
+    background-color: rgba(0, 203, 255, 0.5); }
+  #vision .hero-body .title {
+    padding: 2.5rem 0; }
+
 footer p {
   padding: 0.5rem 0;
   font-size: 1rem; }
@@ -6610,9 +6645,6 @@ footer .info {
   flex-shrink: 0; }
 
 footer .footer-img {
-  border-right: 2px solid white; }
-
-footer .footer-img-nosotros {
   border-right: 2px solid #E33A5C; }
 
 footer .has-text-green {

@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  section.hero.is-fullheight(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+  section.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
     div.hero-head
       header.nav.is-shadowless
         div.container
@@ -26,33 +26,27 @@ block content
       div.container
         div.columns
           div.column.has-text-centered
-            img(src="/images/logo.png")
+            figure.image.is-400x400.margin-auto
+              img(src="/images/logo2.png")
         div.columns
           div.column
             p.subtitle.is-6.title-purple.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit. </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.  
             
-  section.is-fullhd
-    div.columns.is-gapless
-      div.has-background-danger
-      div.column(style="background-image: url(./images/mision.png); background-size: cover;")
-        div.hero
-          div.columns.hero-body
-            div.column.has-text-centered  
-              h1.title.is-3.is-white MISION
-            div.column 
-              p.has-text-white.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante.
-
-  section.is-fullhd
-    div.columns.is-gapless
-      div.has-background-danger
-      div.column(style="background-image: url(./images/vision.png); background-size: cover;")
-        div.hero
-          div.columns.hero-body
-            div.column.has-text-centered  
-              h1.title.is-3.is-white VISION
-
-      
-
+  section.hero.relative#mision(style="background-image: url(./images/mision.png); background-size: cover;")
+    div.hero-body
+      div.is-overlay
+      div.container
+        div.columns
+          div.column
+            div.hero
+              div.hero-body
+                h1.title.is-3.is-white MISION
+          div.column 
+            p.has-text-white.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. Donec eget mauris at velit efficitur bibendum. Suspendisse placerat lectus a ligula tincidunt suscipit.Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante.
+  section.hero.is-medium#vision(style="background-image: url(./images/vision.png); background-size: cover;")
+    div.hero-body
+      div.container.has-text-centered.is-fullhd.has-background-vision
+        h1.title.is-3.is-white VISION
   section.section.has-text-centered.is-medium#equipo
     div.container
       h1.title.title-1.has-text-centered Nuestro Equipo
@@ -79,7 +73,7 @@ block content
       div.column.has-text-right
         div.hero
           div.hero-body
-            div.footer-img-nosotros
+            div.footer-img
               img(src="/images/logo.png")
       div.column.has-text-green.has-text-left.info
         div.hero

@@ -3,19 +3,24 @@ extends layout
 block content
   section.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
     div.hero-head
-      header.nav.is-shadowless
-        div.container
-          div.nav-left
-            a.nav-item
+      div.container
+        div.navbar.is-shadowless
+          div.navbar-brand
+            a.navbar-item
               img(src="/images/logo2.png")
-          div.nav-right.nav-menu
-            a.nav-item(href="/") INICIO
-            a.nav-item.is-active.is-primary(href="nosotros") NOSOTROS
-            a.nav-item(href="servicios") SERVICIOS 
-            a.nav-item(href="galeria") FOTOS
-            span.nav-item
-              a.button.is-primary.is-inverted
-                span COTIZA
+            div.navbar-burger.burger
+              span
+              span
+              span
+          div.navbar-menu
+            div.navbar-end
+              a.navbar-item.is-active.is-primary(href="/") INICIO
+              a.navbar-item(href="nosotros") NOSOTROS
+              a.navbar-item(href="servicios") SERVICIOS
+              a.navbar-item(href="galeria") FOTOS
+              span.navbar-item
+                a.button.is-primary.is-inverted
+                  span COTIZA
     div.hero-body
       div.container
         div.columns

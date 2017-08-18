@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  section.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+  section#hero-image.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
     div.hero-head
       div.container
         div.navbar.is-shadowless
@@ -14,9 +14,9 @@ block content
               span
           div.navbar-menu
             div.navbar-end
-              a.navbar-item.is-active.is-primary(href="/") INICIO
+              a.navbar-item(href="/") INICIO
               a.navbar-item(href="nosotros") NOSOTROS
-              a.navbar-item(href="servicios") SERVICIOS
+              a.navbar-item.is-active.is-primary(href="servicios") SERVICIOS
               a.navbar-item(href="galeria") FOTOS
               span.navbar-item
                 a.button.is-primary.is-inverted

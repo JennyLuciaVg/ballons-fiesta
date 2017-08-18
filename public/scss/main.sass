@@ -30,6 +30,13 @@
   height: 0.0625rem
   margin: 0.5rem auto
 
+#hero-image
+  +desktop
+    .hero-head
+      position: absolute
+      width: 100%
+      top: 0
+
 #testimonios
   .columns
     padding-top: 1.5rem
@@ -98,8 +105,8 @@
     height: 2.7em
 
 #mision
-  .is-overlay
-    background-color: rgba(227,58,92,0.7)
+  .columns
+    background-color: rgba(227,58,92,0.8)
   .align-columns
     display: flex
     align-items: center
@@ -116,9 +123,27 @@
       width: 100%
       max-width: 100%
     .has-background-vision
-      background-color: rgba(0,203,255,0.5)
+      background-color: rgba(0,203,255,0.7)
     .title
       padding: 2.5rem 0
+
+#galeria
+  .column
+    .image
+      background-position: center
+      background-size: cover
+    .is-overlay
+      display: none
+      background-color: rgba(0,203,255,0.7)
+    &:hover
+      .is-overlay
+        display: flex
+        align-items: center
+        flex-grow: 1
+        flex-shrink: 0
+        div
+          width: 100%
+          font-weight: $weight-bold
 
 footer
   p

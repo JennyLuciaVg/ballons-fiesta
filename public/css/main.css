@@ -199,7 +199,9 @@ table th {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0; }
+  top: 0;
+  flex-grow: 1;
+  flex-shrink: 0; }
 
 .is-size-1 {
   font-size: 3rem !important; }
@@ -3302,6 +3304,8 @@ a.box:active {
     position: absolute;
     right: 0;
     top: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
     height: 100%;
     width: 100%; }
   .image.is-square, .image.is-1by1 {
@@ -4307,6 +4311,8 @@ a.dropdown-item {
   position: absolute;
   right: 0;
   top: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
   align-items: center;
   display: none;
   justify-content: center;
@@ -4322,6 +4328,8 @@ a.dropdown-item {
   position: absolute;
   right: 0;
   top: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
   background-color: rgba(10, 10, 10, 0.86); }
 
 .modal-content,
@@ -4612,12 +4620,12 @@ a.nav-item:not(.button) {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1); }
 
 .navbar {
-  min-height: 3.25rem;
+  min-height: 7.5rem;
   position: relative; }
   .navbar > .container {
     align-items: stretch;
     display: flex;
-    min-height: 3.25rem;
+    min-height: 7.5rem;
     width: 100%; }
   .navbar.has-shadow {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1); }
@@ -4628,16 +4636,16 @@ a.nav-item:not(.button) {
   display: flex;
   flex-shrink: 0;
   max-width: 100vw;
-  min-height: 3.25rem;
+  min-height: 7.5rem;
   overflow-x: auto;
   overflow-y: hidden; }
 
 .navbar-burger {
   cursor: pointer;
   display: block;
-  height: 3.25rem;
+  height: 7.5rem;
   position: relative;
-  width: 3.25rem;
+  width: 7.5rem;
   margin-left: auto; }
   .navbar-burger span {
     background-color: #4a4a4a;
@@ -4697,7 +4705,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
     padding: 0; }
   .navbar-item.is-tab {
     border-bottom: 1px solid transparent;
-    min-height: 3.25rem;
+    min-height: 7.5rem;
     padding-bottom: calc(0.5rem - 1px); }
     .navbar-item.is-tab:hover {
       background-color: transparent;
@@ -4733,11 +4741,57 @@ a.navbar-item:hover, a.navbar-item.is-active,
   margin: 0.5rem 0; }
 
 @media screen and (max-width: 1007px) {
+  .navbar {
+    min-height: 4.5rem;
+    background-color: white; }
   .navbar > .container {
     display: block; }
-  .navbar-brand .navbar-item {
-    align-items: center;
-    display: flex; }
+  .navbar-item {
+    color: #00d1b2; }
+  .navbar-brand {
+    min-height: 4.5rem; }
+    .navbar-brand .navbar-item {
+      align-items: center;
+      display: flex; }
+      .navbar-brand .navbar-item img {
+        max-height: 3.5rem; }
+  .navbar-burger {
+    cursor: pointer;
+    display: block;
+    height: 4.5rem;
+    position: relative;
+    width: 4.5rem; }
+    .navbar-burger span {
+      background-color: #4a4a4a;
+      display: block;
+      height: 1px;
+      left: 50%;
+      margin-left: -7px;
+      position: absolute;
+      top: 50%;
+      transition: none 86ms ease-out;
+      transition-property: background, left, opacity, transform;
+      width: 15px; }
+      .navbar-burger span:nth-child(1) {
+        margin-top: -6px; }
+      .navbar-burger span:nth-child(2) {
+        margin-top: -1px; }
+      .navbar-burger span:nth-child(3) {
+        margin-top: 4px; }
+    .navbar-burger:hover {
+      background-color: whitesmoke; }
+    .navbar-burger.is-active span {
+      background-color: #00d1b2; }
+      .navbar-burger.is-active span:nth-child(1) {
+        margin-left: -5px;
+        transform: rotate(45deg);
+        transform-origin: left top; }
+      .navbar-burger.is-active span:nth-child(2) {
+        opacity: 0; }
+      .navbar-burger.is-active span:nth-child(3) {
+        margin-left: -5px;
+        transform: rotate(-45deg);
+        transform-origin: left bottom; }
   .navbar-menu {
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
@@ -4752,7 +4806,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
     align-items: stretch;
     display: flex; }
   .navbar {
-    min-height: 3.25rem; }
+    min-height: 7.5rem; }
     .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
     .navbar.is-transparent .navbar-link:hover,
     .navbar.is-transparent .navbar-link.is-active {
@@ -6466,6 +6520,8 @@ label.panel-block {
   position: absolute;
   right: 0;
   top: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
   overflow: hidden; }
   .hero-video video {
     left: 50%;
@@ -6549,6 +6605,12 @@ label.panel-block {
   height: 0.0625rem;
   margin: 0.5rem auto; }
 
+@media screen and (min-width: 1008px) {
+  #hero-image .hero-head {
+    position: absolute;
+    width: 100%;
+    top: 0; } }
+
 #testimonios .columns {
   padding-top: 1.5rem; }
   #testimonios .columns .box-testimonios {
@@ -6617,8 +6679,8 @@ label.panel-block {
 #suscribete .input {
   height: 2.7em; }
 
-#mision .is-overlay {
-  background-color: rgba(227, 58, 92, 0.7); }
+#mision .columns {
+  background-color: rgba(227, 58, 92, 0.8); }
 
 #mision .align-columns {
   display: flex;
@@ -6635,9 +6697,26 @@ label.panel-block {
     width: 100%;
     max-width: 100%; }
   #vision .hero-body .has-background-vision {
-    background-color: rgba(0, 203, 255, 0.5); }
+    background-color: rgba(0, 203, 255, 0.7); }
   #vision .hero-body .title {
     padding: 2.5rem 0; }
+
+#galeria .column .image {
+  background-position: center;
+  background-size: cover; }
+
+#galeria .column .is-overlay {
+  display: none;
+  background-color: rgba(0, 203, 255, 0.7); }
+
+#galeria .column:hover .is-overlay {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0; }
+  #galeria .column:hover .is-overlay div {
+    width: 100%;
+    font-weight: 700; }
 
 footer p {
   padding: 0.5rem 0;

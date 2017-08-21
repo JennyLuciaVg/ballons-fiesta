@@ -4330,7 +4330,7 @@ a.dropdown-item {
   top: 0;
   flex-grow: 1;
   flex-shrink: 0;
-  background-color: rgba(10, 10, 10, 0.86); }
+  background-color: rgba(0, 203, 255, 0.7); }
 
 .modal-content,
 .modal-card {

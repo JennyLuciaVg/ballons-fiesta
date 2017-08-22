@@ -1,5 +1,30 @@
 @import "../../node_modules/bulma/bulma"
 
+
+// CAROUSEL
+.carousel-main
+  .carousel-cell
+    width: 100%
+    height: auto
+    text-align: center
+    //margin-left: 20px
+    img
+      display: block
+      width: 100%
+
+.carousel-cell::before
+  display: block
+  text-align: center
+  line-height: 200px
+  font-size: 80px
+  color: white
+
+.carousel-nav
+  .carousel-cell
+    height: 80px
+    width: 100px
+
+// end: CAROUSEL
 .button
   padding-left: 2.8em
   padding-right: 2.8em
@@ -144,6 +169,11 @@
         div
           width: 100%
           font-weight: $weight-bold
+  .modal
+    .modal-content
+      background-color: $white
+      .where-was
+        padding: 1.20rem 1rem
 
 footer
   p

@@ -32,4 +32,10 @@ router.get('/galeria', function(req, res){
   });
 });
 
+router.get('/test', function(req, res){
+  res.render('test', {
+    title: 'test'
+  });
+});
+
 module.exports = router;

@@ -6745,3 +6745,66 @@ footer .footer-box-shadow {
   .footer-img {
     border-right: none !important;
     text-align: center; } }
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+}
+.ui-draggable, .ui-droppable {
+    background-position: top;
+}
+.ui-draggable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+#demos section {
+      overflow: hidden;
+    }
+    .sortable {
+      width: 310px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .sortable.grid {
+      overflow: hidden;
+    }
+    .sortable li {
+      list-style: none;
+      border-color: transparent;
+      background-color: #00d1b2;
+      color: #1C94C4;
+      margin: 20px;
+      padding: 5px;
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+    }
+    .sortable.grid li {
+      line-height: 70px;
+      float: left;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+    }
+    .handle {
+      cursor: move;
+    }
+    .sortable.connected {
+      width: 200px;
+      min-height: 100px;
+      float: left;
+    }
+    li.disabled {
+      opacity: 0.5;
+    }
+    li.highlight {
+      background: #FEE25F;
+    }
+    li.sortable-placeholder {
+      border: 1px dashed #CCC;
+      background: none;
+    }

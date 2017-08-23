@@ -5,13 +5,17 @@ $(document).ready(function() {
 });
 
 $(function(){
+  //Menu
   $('.navbar-burger').click(function(){
     $(this).toggleClass('is-active');
     $('.navbar-menu').toggleClass('is-active');
   });
 
+  //Modal Galeria
   $('#galeria .column').click(function(){
-    $('.modal').addClass('is-active');
+    var getId = $(this).attr('data-target');
+    console.log(getId);
+    $(getId).addClass('is-active');
     //Carousel Flickity
     $('.carousel-main').flickity({
       cellAlign: 'center',

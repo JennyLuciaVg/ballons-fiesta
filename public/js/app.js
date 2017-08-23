@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     console.log( "ready!" );
-    //$( "#draggable" ).draggable();
+    $( "#draggable" ).draggable();
 });
 
 $(function(){
@@ -40,15 +40,15 @@ $(function(){
 
 });
 
-// $(function() {
-//   $('#sortable1, #sortable2').h5s();
-//   $('#sortable3').h5s({
-//     items: ':not(.disabled)'
-//   });
-//   $('#sortable-with-handles').h5s({
-//     handle: '.handle'
-//   });
-//   $('#sortable4, #sortable5').h5s({
-//     //connectWith: '.connected'
-//   });
-// });
+$(function() {
+  $('#sortable1, #sortable2').h5s();
+  $('#sortable3').h5s({
+    items: ':not(.disabled)'
+  });
+  $('#sortable-with-handles').h5s({
+    handle: '.handle'
+  });
+  $('#sortable4, #sortable5').h5s({
+    //connectWith: '.connected'
+  });
+});

@@ -41,14 +41,15 @@ $(function(){
 });
 
 $(function() {
-  $('#sortable1, #sortable2').h5s();
-  $('#sortable3').h5s({
-    items: ':not(.disabled)'
+  // $('#sortable1, #sortable2').h5s();
+  // $('#sortable3').h5s({
+  //   items: ':not(.disabled)'
+  // });
+  // $('#sortable-with-handles').h5s({
+  //   handle: '.handle'
+  // });
+  $('#sortable4, #sortable5, #sortable6, #sortable7').h5s({
+    connectWith: '.connected'
   });
-  $('#sortable-with-handles').h5s({
-    handle: '.handle'
-  });
-  $('#sortable4, #sortable5').h5s({
-    //connectWith: '.connected'
-  });
+
 });

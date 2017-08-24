@@ -26,18 +26,37 @@ block content
         div.columns
           div.column.has-text-centered.is-white
             h1.title.is-1.is-white ELIGE TUS MOMENTOS
-  section.hero.is-fullheight
+  section.hero.is-fullheight#demos
     div.hero-body
       div.container
         div.columns
-          div.column.has-text-centered
-            figure.image.is-400x400.margin-auto
-              img(src="/images/logo2.png")
-        div.columns
-          div.column
-            p.subtitle.is-6.title-purple.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl.
-            
-      
+          div.column.is-one-quarter
+            ul#sortable4.connected.sortable.list(style="float: right")
+              li.item Item
+              li.item(style="background-color:skyblue;border:none;") Item
+              li.item Item
+              li.item Item
+              li(style="background-color:transparent;border:none;color:transparent") Test
+          div.column.is-half#with-background(style="height: 500px;background-image: url('/images/cotizar/CotizaFiesta.png'); background-size: cover;")
+            div.columns
+              div.column
+                ul#sortable5.connected.sortable.list
+                  li(style="background-color:transparent;border:none;color:transparent") Test
+                  li(style="background-color:transparent;border:none;color:transparent") Test
+                  li(style="background-color:transparent;border:none;color:transparent") Test
+              div.column
+                ul#sortable6.connected.sortable.list
+                  li(style="background-color:transparent;border:none;color:transparent") Test
+                  li(style="background-color:transparent;border:none;color:transparent") Test
+                  li(style="background-color:transparent;border:none;color:transparent") Test
+          div.column.is-one-quarter
+            ul#sortable7.connected.sortable.list(style="float: left")
+              li.item Item
+              li.item(style="background-color:skyblue;border:none;") Item
+              li.item Item
+              li.item Item
+              li(style="background-color:transparent;border:none;color:transparent")
+
   footer.has-text-centered
     div.columns.is-gapless.footer-box-shadow
       div.column.has-text-right

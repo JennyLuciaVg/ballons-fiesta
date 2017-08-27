@@ -38,18 +38,21 @@ $(function(){
     $('.modal').removeClass('is-active');
   });
 
-});
-
-$(function() {
-  // $('#sortable1, #sortable2').h5s();
-  // $('#sortable3').h5s({
-  //   items: ':not(.disabled)'
-  // });
-  // $('#sortable-with-handles').h5s({
-  //   handle: '.handle'
-  // });
+  //Funcionalidad de cotizar
   $('#sortable4, #sortable5, #sortable6, #sortable7').h5s({
     connectWith: '.connected'
   });
+
+  //Animaciones en el website con wowjs
+  var wow = new WOW(
+    {
+      boxClass:'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }
+  );
+  wow.init();
 
 });

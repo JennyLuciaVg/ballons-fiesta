@@ -1,5 +1,7 @@
 @import "../../node_modules/bulma/bulma"
-@import "../../node_modules/dragula/dist/dragula"
+@import "../../node_modules/wowjs/css/site"
+@import "../../node_modules/wowjs/css/libs/animate"
+// @import "../../node_modules/dragula/dist/dragula"
 // CAROUSEL
 .carousel-main
   .carousel-cell
@@ -128,7 +130,7 @@
           width: 100%
 #equipo
   .image-rounded
-    border-radius: 50px
+    border-radius: 67px
   .columns
     padding-top: 1.5rem
   .column
@@ -168,18 +170,13 @@
     flex-shrink: 0
 
 #vision
-  .hero-body
-    padding-right: 0
-    padding-left: 0
-    width: 100%
-    max-width: 100%
-    .container
-      width: 100%
-      max-width: 100%
-    .has-background-vision
-      background-color: rgba(0,203,255,0.7)
-    .title
-      padding: 2.5rem 0
+  .columns
+    background-color: rgba(0,203,255,0.6)
+  .align-columns
+    display: flex
+    align-items: center
+    flex-grow: 1
+    flex-shrink: 0
 
 #galeria
   .column
@@ -188,7 +185,7 @@
       background-size: cover
     .is-overlay
       display: none
-      background-color: rgba(0,203,255,0.7)
+      background-color: rgba(0,203,255,0.6)
     &:hover
       .is-overlay
         display: flex

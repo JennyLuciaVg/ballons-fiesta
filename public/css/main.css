@@ -8619,6 +8619,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut; }
 
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80); }
+
+.gu-hide {
+  display: none !important; }
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20); }
+
 .carousel-main .carousel-cell {
   width: 100%;
   height: auto;
@@ -8638,7 +8660,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 110px;
   width: 150px; }
 
-#demos .connected .item {
+#touch-cotizar .connected .item {
   color: white;
   padding: 1.5rem;
   background-color: #00CBFF;
@@ -8647,19 +8669,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 80px;
   height: 72px; }
 
-#demos .connected .item-transparent {
+#touch-cotizar .connected .item-transparent {
   background-color: transparent;
   width: 80px;
   height: 72px;
   border: 1px solid gray; }
 
-#demos #with-background .connected .item {
+#touch-cotizar .touch-center .connected .item {
   width: 80px;
-  height: 72px; }
-
-#demos #with-background .connected .item-transparent {
-  background-color: transparent;
+  height: 72px;
   border: 1px dashed black; }
+
+#touch-cotizar .touch-center .connected .item-transparent {
+  background-color: transparent; }
 
 .button {
   padding-left: 2.8em;

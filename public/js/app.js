@@ -14,7 +14,6 @@ $(function(){
   //Modal Galeria
   $('#galeria .column').click(function(){
     var getId = $(this).attr('data-target');
-    console.log(getId);
     $(getId).addClass('is-active');
     //Carousel Flickity
     var carouselMainId = getId + ' .carousel-main'
@@ -43,16 +42,18 @@ $(function(){
     connectWith: '.connected'
   });
 
-  //Animaciones en el website con wowjs
-  var wow = new WOW(
-    {
-      boxClass:'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: true,
-      live: true
-    }
-  );
-  wow.init();
-
 });
+
+// $(function(){
+//   //Animaciones en el website con wowjs
+//   var wow = new WOW(
+//     {
+//       boxClass:'wow',
+//       animateClass: 'animated',
+//       offset: 0,
+//       mobile: true,
+//       live: true
+//     }
+//   );
+//   wow.init();
+// });

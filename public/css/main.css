@@ -8619,28 +8619,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut; }
 
-.gu-mirror {
-  position: fixed !important;
-  margin: 0 !important;
-  z-index: 9999 !important;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80); }
-
-.gu-hide {
-  display: none !important; }
-
-.gu-unselectable {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important; }
-
-.gu-transit {
-  opacity: 0.2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20); }
-
 .carousel-main .carousel-cell {
   width: 100%;
   height: auto;
@@ -8675,12 +8653,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 72px;
   border: 1px solid gray; }
 
-#touch-cotizar .touch-center .connected .item {
+#touch-cotizar .touch-center .connected .item.in {
   width: 80px;
   height: 72px;
-  border: 1px dashed black; }
-
-#touch-cotizar .touch-center .connected .item-transparent {
+  border: 2px dashed black;
   background-color: transparent; }
 
 .button {

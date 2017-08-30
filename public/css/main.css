@@ -8767,7 +8767,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 2.7em; }
 
 #mision .columns {
-  background-color: rgba(227, 58, 92, 0.8); }
+  transition: all 0.5s ease; }
+  #mision .columns .only-mision .title {
+    background-color: rgba(227, 58, 92, 0.8);
+    padding: 1.5rem 0; }
+  #mision .columns .only-mision .hero-body {
+    padding-left: 0;
+    padding-right: 0; }
+  #mision .columns .in-hover {
+    display: none; }
+  #mision .columns:hover {
+    transition: all 0.5s ease;
+    background-color: rgba(227, 58, 92, 0.8); }
+    #mision .columns:hover .in-hover {
+      display: flex; }
+      #mision .columns:hover .in-hover .title {
+        padding: 1.5rem 0; }
+    #mision .columns:hover .only-mision {
+      display: none; }
 
 #mision .align-columns {
   display: flex;

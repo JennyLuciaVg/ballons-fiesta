@@ -162,7 +162,26 @@
 
 #mision
   .columns
-    background-color: rgba(227,58,92,0.8)
+    transition: all 0.5s ease
+    //background-color: rgba(227,58,92,0.8)
+    .only-mision
+      .title
+        background-color: rgba(227,58,92,0.8)
+        padding: 1.5rem 0
+      .hero-body
+        padding-left: 0
+        padding-right: 0
+    .in-hover
+      display: none
+    &:hover
+      transition: all 0.5s ease
+      background-color: rgba(227,58,92,0.8)
+      .in-hover
+        display: flex
+        .title
+          padding: 1.5rem 0
+      .only-mision
+        display: none
   .align-columns
     display: flex
     align-items: center
@@ -170,7 +189,6 @@
     flex-shrink: 0
 
 #vision
-
   .columns
     transition: all 0.5s ease
     //background-color: rgba(0,203,255,0.6)

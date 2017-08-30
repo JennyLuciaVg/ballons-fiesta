@@ -170,8 +170,29 @@
     flex-shrink: 0
 
 #vision
+
   .columns
-    background-color: rgba(0,203,255,0.6)
+    transition: all 0.5s ease
+    //background-color: rgba(0,203,255,0.6)
+    .only-vision
+      .title
+        background-color: rgba(0,203,255,0.6)
+        padding: 1.5rem 0
+      .hero-body
+        padding-left: 0
+        padding-right: 0
+    .in-hover
+      display: none
+    &:hover
+      transition: all 0.5s ease
+      background-color: rgba(0,203,255,0.6)
+      .in-hover
+        display: flex
+        .title
+          padding: 1.5rem 0
+      .only-vision
+        display: none
+
   .align-columns
     display: flex
     align-items: center

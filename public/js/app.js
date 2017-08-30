@@ -44,16 +44,16 @@ $(function(){
 
 });
 
-// $(function(){
-//   //Animaciones en el website con wowjs
-//   var wow = new WOW(
-//     {
-//       boxClass:'wow',
-//       animateClass: 'animated',
-//       offset: 0,
-//       mobile: true,
-//       live: true
-//     }
-//   );
-//   wow.init();
-// });
+$(function(){
+  //Animaciones en el website con wowjs
+  var wow = new WOW(
+    {
+      boxClass:'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }
+  );
+  wow.init();
+});

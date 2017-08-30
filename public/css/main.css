@@ -8776,7 +8776,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   flex-shrink: 0; }
 
 #vision .columns {
-  background-color: rgba(0, 203, 255, 0.6); }
+  transition: all 0.5s ease; }
+  #vision .columns .only-vision .title {
+    background-color: rgba(0, 203, 255, 0.6);
+    padding: 1.5rem 0; }
+  #vision .columns .only-vision .hero-body {
+    padding-left: 0;
+    padding-right: 0; }
+  #vision .columns .in-hover {
+    display: none; }
+  #vision .columns:hover {
+    transition: all 0.5s ease;
+    background-color: rgba(0, 203, 255, 0.6); }
+    #vision .columns:hover .in-hover {
+      display: flex; }
+      #vision .columns:hover .in-hover .title {
+        padding: 1.5rem 0; }
+    #vision .columns:hover .only-vision {
+      display: none; }
 
 #vision .align-columns {
   display: flex;

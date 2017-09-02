@@ -1,6 +1,38 @@
+//@include font-face("Segoe", "fonts/segoeui")
+@font-face
+  font-family: 'Segoe'
+  src: url('/fonts/segoeui.ttf')
+
+@font-face
+  font-family: 'Segoe-bold'
+  src: url('/fonts/segoeuib.ttf')
+
+@font-face
+  font-family: 'Segoe-semibold'
+  src: url('/fonts/segoeuisb.ttf')
+
+@font-face
+  font-family: 'Track'
+  src: url('/fonts/Track.ttf')
+html
+  font-family: 'Segoe', sans-serif !important
+
 @import "../../node_modules/bulma/bulma"
 @import "../../node_modules/wowjs/css/site"
 @import "../../node_modules/wowjs/css/libs/animate"
+
+.title-slider
+  font-family: 'Track'
+
+.title-segoe-normal
+  font-family: 'Segoe', sans-serif
+  font-weight: normal
+
+.title-segoe-bold
+  font-family: 'Segoe-bold', sans-serif
+
+.title-segoe-sbold
+  font-family: 'Segoe-semibold', sans-serif
 
 // CAROUSEL
 .carousel-main
@@ -114,20 +146,24 @@
     padding-top: 1.5rem
   .column
     .image
+      transition: all 0.5s ease
       background-position: center
-      background-size: cover
+      background-size: 115%
     .is-overlay
+      transition: all 0.5s ease
       display: none
       margin: 0.75rem
-      background-color: rgba(153, 0, 255, 0.7)
     &:hover
       .is-overlay
+        background-color: rgba(153, 0, 255, 0.7)
         display: flex
         align-items: center
         flex-grow: 1
         flex-shrink: 0
         div
           width: 100%
+      .image
+        background-size: 140%
 #equipo
   .image-rounded
     border-radius: 67px
@@ -221,19 +257,44 @@
   .column
     .image
       background-position: center
-      background-size: cover
+      background-size: 115%
+      //transition: all 0.5s ease
     .is-overlay
-      display: none
-      background-color: rgba(0,203,255,0.6)
-    &:hover
-      .is-overlay
-        display: flex
-        align-items: center
+      //display: none
+      //opacity: 0
+      //transition: all 0.5s ease
+      .content-text-galery
+        width: 100%
+        opacity: 0
+        position: absolute
+        top: 100%
+        transform: translateY(-50%)
+        transition: all 1.5s ease
         flex-grow: 1
         flex-shrink: 0
-        div
-          width: 100%
-          font-weight: $weight-bold
+        z-index: 100
+    &:hover
+      //display: flex
+      .is-overlay
+        background-color: rgba(0,203,255,0.6)
+      //opacity: 1
+      .content-text-galery
+        top: 50%
+        opacity: 1
+      .image
+        background-size: 130%
+      // .is-overlay
+      //   background-color: rgba(0,203,255,0.6)
+      //   display: flex
+      //   align-items: center
+      //   flex-grow: 1
+      //   flex-shrink: 0
+      //   .content-text-galery
+      //     top: 50%
+      //     opacity: 1
+
+
+
   .modal
     .modal-content
       background-color: $white

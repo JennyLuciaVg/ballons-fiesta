@@ -37,14 +37,15 @@ $(function(){
     $('.modal').removeClass('is-active');
   });
 
-  //Funcionalidad de cotizar
-  $('#sortable4, #sortable5, #sortable6, #sortable7').h5s({
-    connectWith: '.connected'
-  });
 
 });
 
 $(function(){
+
+  //Funcionalidad de cotizar
+  $('#sortable4, #sortable5, #sortable6, #sortable7').h5s({
+    connectWith: '.connected'
+  });
   //Animaciones en el website con wowjs
   var wow = new WOW(
     {
@@ -56,4 +57,5 @@ $(function(){
     }
   );
   wow.init();
+
 });

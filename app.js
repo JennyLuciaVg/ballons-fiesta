@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var jquery = require('jquery');
+//var wowjs = require('wowjs');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -25,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 //app.use('/dragula', express.static(__dirname + '/node_modules/dragula/dist'));
-//app.use('/wowjs', express.static(__dirname + '/node_modules/wowjs/dist'));
+//app.use('/wowjs', express.static(__dirname + '/node_modules/wowjs/dist/'));
 
 app.use('/', index);
 app.use('/users', users);

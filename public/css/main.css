@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Segoe';
+  src: url("/fonts/segoeui.ttf"); }
+
+@font-face {
+  font-family: 'Segoe-bold';
+  src: url("/fonts/segoeuib.ttf"); }
+
+@font-face {
+  font-family: 'Segoe-semibold';
+  src: url("/fonts/segoeuisb.ttf"); }
+
+@font-face {
+  font-family: 'Track';
+  src: url("/fonts/Track.ttf"); }
+
+html {
+  font-family: 'Segoe', sans-serif !important; }
+
 /*! bulma.io v0.5.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -8619,6 +8638,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut; }
 
+.title-slider {
+  font-family: 'Track'; }
+
+.title-segoe-normal {
+  font-family: 'Segoe', sans-serif;
+  font-weight: normal; }
+
+.title-segoe-bold {
+  font-family: 'Segoe-bold', sans-serif; }
+
+.title-segoe-sbold {
+  font-family: 'Segoe-semibold', sans-serif; }
+
 .carousel-main .carousel-cell {
   width: 100%;
   height: auto;
@@ -8716,21 +8748,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding-top: 1.5rem; }
 
 #eventos .column .image {
+  transition: all 0.5s ease;
   background-position: center;
-  background-size: cover; }
+  background-size: 115%; }
 
 #eventos .column .is-overlay {
+  transition: all 0.5s ease;
   display: none;
-  margin: 0.75rem;
-  background-color: rgba(153, 0, 255, 0.7); }
+  margin: 0.75rem; }
 
 #eventos .column:hover .is-overlay {
+  background-color: rgba(153, 0, 255, 0.7);
   display: flex;
   align-items: center;
   flex-grow: 1;
   flex-shrink: 0; }
   #eventos .column:hover .is-overlay div {
     width: 100%; }
+
+#eventos .column:hover .image {
+  background-size: 140%; }
 
 #equipo .image-rounded {
   border-radius: 67px; }
@@ -8820,20 +8857,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #galeria .column .image {
   background-position: center;
-  background-size: cover; }
+  background-size: 115%; }
 
-#galeria .column .is-overlay {
-  display: none;
-  background-color: rgba(0, 203, 255, 0.6); }
-
-#galeria .column:hover .is-overlay {
-  display: flex;
-  align-items: center;
+#galeria .column .is-overlay .content-text-galery {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  transition: all 1.5s ease;
   flex-grow: 1;
   flex-shrink: 0; }
-  #galeria .column:hover .is-overlay div {
-    width: 100%;
-    font-weight: 700; }
+
+#galeria .column:hover .is-overlay {
+  background-color: rgba(0, 203, 255, 0.6); }
+
+#galeria .column:hover .content-text-galery {
+  top: 50%;
+  opacity: 1; }
+
+#galeria .column:hover .image {
+  background-size: 130%; }
 
 #galeria .modal .modal-content {
   background-color: white; }

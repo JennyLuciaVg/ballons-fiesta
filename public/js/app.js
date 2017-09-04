@@ -59,3 +59,15 @@ $(function(){
   wow.init();
 
 });
+
+$(function(){
+  var animData = {
+    wrapper: document.getElementById('bodymovin'),
+    animType: 'html',
+    loop: true,
+    prerender: true,
+    autoplay: true,
+    path: 'js/serpentina/data.json'
+  };
+  var anim = bodymovin.loadAnimation(animData);
+});

@@ -61,13 +61,64 @@ $(function(){
 });
 
 $(function(){
-  var animData = {
-    wrapper: document.getElementById('bodymovin'),
-    animType: 'html',
-    loop: true,
-    prerender: true,
-    autoplay: true,
-    path: 'js/serpentina/data.json'
-  };
-  var anim = bodymovin.loadAnimation(animData);
+  var title_left_pink = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_title_left_pink'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serp_title_left_pink.json'
+    }
+  );
+  var title_right_pink = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_title_right_pink'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serp_title_right_pink.json'
+    }
+  );
+  var title_left_purple = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_title_left_purple'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serp_title_left_purple.json'
+    }
+  );
+  var title_right_purple = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_title_right_purple'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serp_title_right_purple.json'
+    }
+  );
+  var title_left_cyan = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_title_left_cyan'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serp_title_left_cyan.json'
+    }
+  );
+  var title_right_cyan = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_title_right_cyan'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serp_title_right_cyan.json'
+    }
+  );
 });

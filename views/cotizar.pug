@@ -26,34 +26,38 @@ block content
         div.columns
           div.column.has-text-centered.is-white
             h1.title.is-1.is-white.title-slider ELIGE TUS MOMENTOS
-  section.hero.is-fullheight#touch-cotizar
+  section.hero#demos
     div.hero-body
       div.container
         div.columns
           div.column.is-one-quarter
-            ul#sortable4.connected.sortable.list(style="float:right;")
-              li.item#item-1 Item
-              li.item#item-1 Item
-              li.item#item-1 Item
-              li.item#item-1 Item
+            ul.source.connected(style="float:right;")
+              li.item Item
+              li.item Item
+              li.item Item
+              li.item Item
           div.column.is-half.touch-center(style="height: 500px;background-image: url('/images/cotizar/CotizaFiesta.png'); background-size: cover;")
             div.columns
               div.column
-                ul#sortable5.connected.sortable.list
-                  li.item.in 
-                  li.item.in 
-                  li.item.in 
+                ul.target.connected
               div.column
-                ul#sortable6.connected.sortable.list(style="float:right;")
-                  li.item.in 
-                  li.item.in 
-                  li.item.in 
+                ul.target.connected(style="float:right;")
           div.column.is-one-quarter
-            ul#sortable7.connected.sortable.list(style="float: left")
+            ul.source.connected
               li.item Item
               li.item Item
               li.item Item
               li.item Item
+  section.hero#suscribete(style="background-image: url(./images/suscribe.png)")
+    div.hero-body
+      div.container.has-text-centered
+        h1.title.has-text-white SUSCRIBETE
+        h2.subtitle.has-text-white.is-6 Suscribete a nuestro boletín de novedades
+        div.field.has-addons.has-addons-centered
+          div.control
+            input.input(placeholder="Correo Electronico")
+          div.control
+            a.button.is-primary SUSCRIBIRSE
   footer.has-text-centered
     div.columns.is-gapless.footer-box-shadow
       div.column.has-text-right

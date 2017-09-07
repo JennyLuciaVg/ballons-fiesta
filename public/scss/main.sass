@@ -34,31 +34,85 @@ html
 .title-segoe-sbold
   font-family: 'Segoe-semibold', sans-serif
 
-// CAROUSEL
-.carousel-main
-  .carousel-cell
-    width: 100%
-    height: auto
-    text-align: center
-    //margin-left: 20px
-    img
-      display: block
+  // CAROUSEL
+#galeria
+  .carousel-main
+    .carousel-cell
       width: 100%
+      height: auto
+      text-align: center
+      //margin-left: 20px
+      img
+        display: block
+        width: 100%
 
-.carousel-cell::before
-  display: block
-  text-align: center
-  line-height: 200px
-  font-size: 80px
-  color: white
+  .carousel-cell::before
+    display: block
+    text-align: center
+    line-height: 200px
+    font-size: 80px
+    color: white
 
-.carousel-nav
-  .carousel-cell
-    height: 110px
-    width: 150px
-// end: CAROUSEL
+  .carousel-nav
+    .carousel-cell
+      height: 110px
+      width: 150px
+  // end: CAROUSEL
 
 //Css: html5sortable
+
+#demos
+  .container
+    position: unset !important
+  .source,
+  .target
+    //min-height: 50px
+    //margin: 0px 25px 10px 0px
+    //padding: 2px
+    //border-width: 1px
+    //border-style: solid
+    //border-radius: 3px
+    list-style-type: none
+    list-style-position: inside
+    li
+      width: 80px
+      height: 72px
+      margin: 2rem 0 2.5rem 0
+      padding: 1.5rem
+      border-radius: 0.5rem
+      cursor: pointer
+      //margin: 5px
+      //padding: 5px
+  .source
+    //border: 1px solid #00CBFF
+    width: 80px
+    height: 100px
+    .ui-sortable-placeholder
+      border: 2px dashed black !important
+      background-color: transparent !important
+      visibility: visible !important
+    li
+      background-color: #00CBFF
+      border: 1px solid #00CBFF
+      color: white
+  .target
+    width: 100%
+    height: 100px
+    li
+      background-color: #00CBFF
+      border: 1px solid #00CBFF
+      color: white
+      margin: 2rem auto !important
+    .ui-sortable-placeholder
+      border: 2px dashed black !important
+      background-color: transparent !important
+      visibility: visible !important
+  .sortable-dragging
+    border-color: #ccc !important
+    background-color: #fafafa !important
+    color: #bbb !important
+  .sortable-placeholder
+    height: 40px
 
 #touch-cotizar
   .connected
@@ -66,7 +120,7 @@ html
       color: $white
       padding: 1.5rem
       background-color: #00CBFF
-      margin-bottom: 3.5rem
+      margin: 2rem 0 2.5rem 0
       border-radius: 0.5rem
       width: 80px
       height: 72px
@@ -124,6 +178,40 @@ html
       position: absolute
       width: 100%
       top: 0
+      z-index: 1000
+
+.is-slider
+  .hero-body
+    padding: 0
+  .main-slider
+    .carousel-cell
+      flex-grow: 1
+      flex-shrink: 0
+      align-items: center
+      display: flex
+    .flickity-prev-next-button
+      background: transparent
+      .arrow
+        fill: white
+      &.no-svg
+        color: white
+      &:disabled
+        display: none
+    .flickity-page-dots
+      bottom: 50%
+      right: 5%
+      width: auto
+    .flickity-page-dots
+      .dot
+        display: block
+        width: 12px
+        height: 12px
+        opacity: 1
+        margin: 8px 0
+        background: transparent
+        border: 2px solid white
+        &.is-selected
+          background: white
 
 #testimonios
   .columns

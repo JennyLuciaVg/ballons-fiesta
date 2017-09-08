@@ -31,7 +31,7 @@ block content
       div.container
         div.columns
           div.column.is-one-quarter
-            ul.source.connected(style="float:right;")
+            ul#source-1.source.connected(style="float:right;")
               li.item Item
               li.item Item
               li.item Item
@@ -39,11 +39,19 @@ block content
           div.column.is-half.touch-center(style="height: 500px;background-image: url('/images/cotizar/CotizaFiesta.png'); background-size: cover;")
             div.columns
               div.column
-                ul.target.connected
+                ul#target-1.target.connected(style="float:left;")
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
               div.column
-                ul.target.connected(style="float:right;")
+                ul#target-2.target.connected(style="float:right;")
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
           div.column.is-one-quarter
-            ul.source.connected
+            ul#source-2.source.connected
               li.item Item
               li.item Item
               li.item Item

@@ -71,26 +71,39 @@ $(function(){
   $(".source, .target").sortable({
       connectWith: ".connected"
   });
-  // $('#sortable4, #sortable5, #sortable6, #sortable7').h5s({
-  //   connectWith: '.connected'
-  // }).addClass('PRUEBA');
+  $('#source-1').sortable({
+     stop: function(e, ui) {
+       console.log('SOURCE Stop / agrego a source - quito target');
+       console.log('------------');
+       $('#source-1').append("<li class='ui-sortable-placeholder remove-dashed'></li>");
+      $('#target-1 > .remove-dashed').first().remove();
+     }
+  });
+  $('#target-1').sortable({
+     stop: function(e, ui) {
+        console.log('TARGET Stop / agrego en target - quito en source');
+        console.log('------------');
+        $('#target-1').append("<li class='ui-sortable-placeholder remove-dashed'></li>");
+       $('#source-1 > .remove-dashed').first().remove();
+     }
+  });
+  $('#source-2').sortable({
+     stop: function(e, ui) {
+       console.log('SOURCE Stop / agrego a source - quito target');
+       console.log('------------');
+       $('#source-2').append("<li class='ui-sortable-placeholder remove-dashed'></li>");
+      $('#target-2 > .remove-dashed').first().remove();
+     }
+  });
+  $('#target-2').sortable({
+     stop: function(e, ui) {
+        console.log('TARGET Stop / agrego en target - quito en source');
+        console.log('------------');
+        $('#target-2').append("<li class='ui-sortable-placeholder remove-dashed'></li>");
+       $('#source-2 > .remove-dashed').first().remove();
+     }
+  });
 
-  // $("#sortable4").sortable({
-  //   start: function (event, ui) {
-  //       var currPos1 = ui.item.index();
-  //   },
-  //   change:  function (event, ui) {
-  //       var currPos2 = ui.item.index();
-  //   }
-  // });
-
-  // $('#sortable4').sortable({
-  //   connectWith: '#sortable5',
-  //   update: function(event, ui) {
-  //     var changedList = this.id;
-  //     var order = $(this).sortable('toArray');
-  //   }
-  // });
   //Animaciones en el website con wowjs
   var wow = new WOW(
     {

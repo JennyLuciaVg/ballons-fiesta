@@ -8800,18 +8800,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .is-slider .main-slider .flickity-page-dots .dot.is-selected {
     background: white; }
 
-#testimonios .columns {
+.testimonios .columns {
   padding-top: 1.5rem; }
-  #testimonios .columns .box-testimonios {
+  .testimonios .columns .box-testimonios {
     padding: 1rem; }
-    #testimonios .columns .box-testimonios .separator-box {
+    .testimonios .columns .box-testimonios .separator-box {
       border-top: 0.1rem solid white;
       width: 7.5rem;
       height: 0.0625rem;
       margin: 0.5rem auto; }
-    #testimonios .columns .box-testimonios img {
+    .testimonios .columns .box-testimonios img {
       border-radius: 50%; }
-    #testimonios .columns .box-testimonios .subtitle {
+    .testimonios .columns .box-testimonios .subtitle {
       color: #fff; }
 
 #eventos .columns {

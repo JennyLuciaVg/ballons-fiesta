@@ -70,9 +70,11 @@ block content
             a.button.is-danger(href="servicios") VER MÁS
   section.section.has-text-centered.is-medium
     div.container
+      div.background-jeje(style="position: absolute;top: 0;bottom: 0;right: 0;left: 0;")
+        div#serp_background_eventos
       div.columns.has-text-centered
         div.column
-          div#serp_title_left_pink
+          //- div#serp_background
         div.column.is-10#eventos
           h1.title.title-1.has-text-centered Últimos eventos
             div.separator
@@ -117,8 +119,10 @@ block content
         div.column
           div#serp_title_right_pink
       a.button.is-primary(href="galeria") VER MÁS
-  section.section.has-text-centered#testimonios
+  section.section.has-text-centered.testimonios(style="padding-bottom: 70px;")
     div.container
+      div.background-jeje(style="position: absolute; z-index: -100; top: 0;bottom: 0;right: 0;left: 0;")
+        div#serp_background_test
       div.columns
         div.column
           div#serp_title_left_cyan

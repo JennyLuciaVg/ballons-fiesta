@@ -118,65 +118,85 @@ $(function(){
 
 });
 
-// $(function(){
-//   var title_left_pink = bodymovin.loadAnimation(
-//     {
-//       container: document.getElementById('serp_title_left_pink'),
-//       renderer: 'svg',
-//       //animType: 'html',
-//       loop: true,
-//       autoplay: true,
-//       path: 'js/serpentina/serp_title_left_pink.json'
-//     }
-//   );
-//   var title_right_pink = bodymovin.loadAnimation(
-//     {
-//       container: document.getElementById('serp_title_right_pink'),
-//       renderer: 'svg',
-//       //animType: 'html',
-//       loop: true,
-//       autoplay: true,
-//       path: 'js/serpentina/serp_title_right_pink.json'
-//     }
-//   );
-//   var title_left_purple = bodymovin.loadAnimation(
-//     {
-//       container: document.getElementById('serp_title_left_purple'),
-//       renderer: 'svg',
-//       //animType: 'html',
-//       loop: true,
-//       autoplay: true,
-//       path: 'js/serpentina/serp_title_left_purple.json'
-//     }
-//   );
-//   var title_right_purple = bodymovin.loadAnimation(
-//     {
-//       container: document.getElementById('serp_title_right_purple'),
-//       renderer: 'svg',
-//       //animType: 'html',
-//       loop: true,
-//       autoplay: true,
-//       path: 'js/serpentina/serp_title_right_purple.json'
-//     }
-//   );
-//   var title_left_cyan = bodymovin.loadAnimation(
-//     {
-//       container: document.getElementById('serp_title_left_cyan'),
-//       renderer: 'svg',
-//       //animType: 'html',
-//       loop: true,
-//       autoplay: true,
-//       path: 'js/serpentina/serp_title_left_cyan.json'
-//     }
-//   );
-//   var title_right_cyan = bodymovin.loadAnimation(
-//     {
-//       container: document.getElementById('serp_title_right_cyan'),
-//       renderer: 'svg',
-//       //animType: 'html',
-//       loop: true,
-//       autoplay: true,
-//       path: 'js/serpentina/serp_title_right_cyan.json'
-//     }
-//   );
-// });
+$(function(){
+  var serp_background_eventos = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_background_eventos'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serpentina_background.json'
+    }
+  );
+  var serp_background_test = bodymovin.loadAnimation(
+    {
+      container: document.getElementById('serp_background_test'),
+      renderer: 'svg',
+      //animType: 'html',
+      loop: true,
+      autoplay: true,
+      path: 'js/serpentina/serpentina_background.json'
+    }
+  );
+  // var title_left_pink = bodymovin.loadAnimation(
+  //   {
+  //     container: document.getElementById('serp_title_left_pink'),
+  //     renderer: 'svg',
+  //     //animType: 'html',
+  //     loop: true,
+  //     autoplay: true,
+  //     path: 'js/serpentina/serp_title_left_pink.json'
+  //   }
+  // );
+  // var title_right_pink = bodymovin.loadAnimation(
+  //   {
+  //     container: document.getElementById('serp_title_right_pink'),
+  //     renderer: 'svg',
+  //     //animType: 'html',
+  //     loop: true,
+  //     autoplay: true,
+  //     path: 'js/serpentina/serp_title_right_pink.json'
+  //   }
+  // );
+  // var title_left_purple = bodymovin.loadAnimation(
+  //   {
+  //     container: document.getElementById('serp_title_left_purple'),
+  //     renderer: 'svg',
+  //     //animType: 'html',
+  //     loop: true,
+  //     autoplay: true,
+  //     path: 'js/serpentina/serp_title_left_purple.json'
+  //   }
+  // );
+  // var title_right_purple = bodymovin.loadAnimation(
+  //   {
+  //     container: document.getElementById('serp_title_right_purple'),
+  //     renderer: 'svg',
+  //     //animType: 'html',
+  //     loop: true,
+  //     autoplay: true,
+  //     path: 'js/serpentina/serp_title_right_purple.json'
+  //   }
+  // );
+  // var title_left_cyan = bodymovin.loadAnimation(
+  //   {
+  //     container: document.getElementById('serp_title_left_cyan'),
+  //     renderer: 'svg',
+  //     //animType: 'html',
+  //     loop: true,
+  //     autoplay: true,
+  //     path: 'js/serpentina/serp_title_left_cyan.json'
+  //   }
+  // );
+  // var title_right_cyan = bodymovin.loadAnimation(
+  //   {
+  //     container: document.getElementById('serp_title_right_cyan'),
+  //     renderer: 'svg',
+  //     //animType: 'html',
+  //     loop: true,
+  //     autoplay: true,
+  //     path: 'js/serpentina/serp_title_right_cyan.json'
+  //   }
+  // );
+});

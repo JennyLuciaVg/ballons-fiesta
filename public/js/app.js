@@ -123,7 +123,6 @@ $(function(){
     {
       container: document.getElementById('serp_background_eventos'),
       renderer: 'svg',
-      //animType: 'html',
       loop: true,
       autoplay: true,
       path: 'js/serpentina/serpentina_background.json'
@@ -133,70 +132,59 @@ $(function(){
     {
       container: document.getElementById('serp_background_test'),
       renderer: 'svg',
-      //animType: 'html',
       loop: true,
       autoplay: true,
       path: 'js/serpentina/serpentina_background.json'
     }
   );
-  // var title_left_pink = bodymovin.loadAnimation(
-  //   {
-  //     container: document.getElementById('serp_title_left_pink'),
-  //     renderer: 'svg',
-  //     //animType: 'html',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'js/serpentina/serp_title_left_pink.json'
-  //   }
-  // );
-  // var title_right_pink = bodymovin.loadAnimation(
-  //   {
-  //     container: document.getElementById('serp_title_right_pink'),
-  //     renderer: 'svg',
-  //     //animType: 'html',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'js/serpentina/serp_title_right_pink.json'
-  //   }
-  // );
-  // var title_left_purple = bodymovin.loadAnimation(
-  //   {
-  //     container: document.getElementById('serp_title_left_purple'),
-  //     renderer: 'svg',
-  //     //animType: 'html',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'js/serpentina/serp_title_left_purple.json'
-  //   }
-  // );
-  // var title_right_purple = bodymovin.loadAnimation(
-  //   {
-  //     container: document.getElementById('serp_title_right_purple'),
-  //     renderer: 'svg',
-  //     //animType: 'html',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'js/serpentina/serp_title_right_purple.json'
-  //   }
-  // );
-  // var title_left_cyan = bodymovin.loadAnimation(
-  //   {
-  //     container: document.getElementById('serp_title_left_cyan'),
-  //     renderer: 'svg',
-  //     //animType: 'html',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'js/serpentina/serp_title_left_cyan.json'
-  //   }
-  // );
-  // var title_right_cyan = bodymovin.loadAnimation(
-  //   {
-  //     container: document.getElementById('serp_title_right_cyan'),
-  //     renderer: 'svg',
-  //     //animType: 'html',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'js/serpentina/serp_title_right_cyan.json'
-  //   }
-  // );
+});
+
+$(function(){
+  $("#datepicker").datepicker({
+    //dateFormat: "dd/mm/yy",
+    dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+    monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"
+    , "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"],
+    minDate: new Date()
+  });  
+  var valCotizar = $("form[name=cotizar]").validate({
+    rules: {
+      fullname: {
+        required: true,
+        minlength: 3
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      number: {
+        required: true,
+        minlength: 7,
+        number: true
+      },
+      date: {
+        required: true,
+        date: true
+      }
+    },
+    messages: {
+      fullname: "Por favor ingrese su nombre.",
+      email: "Por favor ingrese un correo valido.",
+      number: "Por favor ingrese un numero correcto.",
+      date: "Por favor ingrese una fecha valida."
+    },
+    submitHandler: function(){
+      console.log("send");
+      $('.show-message').show();
+    }
+  });
+
+  $('.reset-form').click(function(){
+    console.log("close");
+    //$('form').reset();
+    $('form')[0].reset();
+    valCotizar.resetForm();
+    $('.show-message').hide();
+  });
+
 });

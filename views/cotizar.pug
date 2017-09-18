@@ -63,33 +63,39 @@ block content
       div.container
         div.columns
           div.column.is-offset-2.is-8
-            div.field.is-horizontal
-              div.field-body
-                div.field
-                  div.control.has-icons-left
-                    input.input.is-medium.is-primary(type="text",placeholder="Nombres y Apellidos")
-                    span.icon.is-small.is-left 
-                      i.fa.fa-user
-                div.field
-                  div.control.has-icons-left
-                    input.input.is-medium.is-primary(type="mail",placeholder="Correo electronico")
-                    span.icon.is-small.is-left
-                      i.fa.fa-envelope
-            div.field.is-horizontal
-              div.field-body
-                div.field
-                  div.control.has-icons-left
-                    input.input.is-medium.is-primary(type="text", placeholder="Número")
-                    span.icon.is-small.is-left
-                      i.fa.fa-phone
-                div.field
-                  div.control.has-icons-left
-                    input.input.is-medium.is-primary(type="text", placeholder="Fecha de la fiesta")
-                    span.icon.is-small.is-left
-                      i.fa.fa-calendar
-            div.field.is-grouped.is-grouped-centered
-              p.control
-                a.button.is-primary COTIZAR
+            div.notification.show-message.is-success(style="display:none;border-radius: 0.4rem")
+              button.delete.reset-form
+              span Aqui va el mensajito luego de enviar la cotizacion :v 
+          
+            form(name="cotizar", action="")
+              div.field.is-horizontal
+                div.field-body
+                  div.field
+                    div.control.has-icons-left
+                      input.input.is-medium(type="text",placeholder="Nombres y Apellidos",name="fullname")
+                      span.icon.is-small.is-left 
+                        i.fa.fa-user
+                  div.field
+                    div.control.has-icons-left
+                      input.input.is-medium(type="email",placeholder="Correo electronico", name="email")
+                      span.icon.is-small.is-left
+                        i.fa.fa-envelope
+              div.field.is-horizontal
+                div.field-body
+                  div.field
+                    div.control.has-icons-left
+                      input.input.is-medium(type="text", placeholder="Número", name="number")
+                      span.icon.is-small.is-left
+                        i.fa.fa-phone
+                  div.field
+                    div.control.has-icons-left
+                      input.input.is-medium#datepicker(type="text", placeholder="Fecha de la fiesta", name="date")
+                      span.icon.is-small.is-left
+                        i.fa.fa-calendar
+              div.field.is-grouped.is-grouped-centered
+                p.control
+                  button.button.is-primary(type="submit",style="padding-bottom: 0.7em; padding-top: 0.7em; height: auto") 
+                    span COTIZAR
   footer.has-text-centered
     div.columns.is-gapless.footer-box-shadow
       div.column.has-text-right
